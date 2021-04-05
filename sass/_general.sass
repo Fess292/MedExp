@@ -327,6 +327,17 @@ main
     height: 100%
     opacity: 0.7
     z-index: 9999
+    .popup-close 
+        // position: absolute
+        // top: 10px
+        // right: 10px
+        display: block
+        width: 1em
+        height: 1em
+        background-color: #fff
+        margin: 0 auto
+        margin-bottom: 10px
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)
 .popup 
 	position: fixed
 	top: 20%
@@ -340,8 +351,5 @@ main
 	z-index: 99999
 	opacity: 1
 
-.popup-close 
-	position: absolute
-	top: 10px
-	right: 10px
+    
                
