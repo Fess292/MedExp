@@ -1,0 +1,365 @@
+nav
+    width: 100vw
+    display: flex
+    justify-content: space-between
+    padding: 15px 39px 13px 41px
+    background-color: $grey
+    .left__wrapper, .right__wrapper
+        display: flex
+        justify-content: space-between
+        a
+            text-decoration: none
+            color: black
+            line-height: 1
+    .left__wrapper
+        width: 380px
+    .right__wrapper
+        width: 210px
+        a
+            position: relative
+            &:first-child
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 12px
+                    background: url('../icons/personal.png') (center/cover) no-repeat
+                    // top: -6px
+                    left: -25px
+                &:hover
+                    font-weight: bold
+                    color: $green
+                    // background: $green
+                    // padding: 5px
+                    // box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4)
+                    // border-radius: 8px
+                    // // border: none
+                    // transition-duration: 0.4s
+
+                     
+            &:last-child
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 12px
+                    background: url('../icons/exit.png') (center/cover) no-repeat
+                    // top: -6px
+                    left: -25px
+
+header
+    display: flex
+    justify-content: space-between
+    width: 100vw
+    padding: 26px 40px
+    box-shadow: 2.5px 4.3px 20px 0 rgba(0, 0, 0, 0.1)
+    .title_14
+        font-weight: bold
+
+main
+    display: grid
+    grid-template-columns: 280px 960px
+    column-gap: 40px
+    padding-left: 40px
+    margin-top: 40px
+
+
+
+.sidepanel
+    &-top, &-bottom
+        width: 100%
+        box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+        h3
+            display: block
+            margin: 0 auto
+            background-color: $green
+            padding: 23px 30px 21px 30px
+            line-height: 0
+        &__wrapper
+            background: url('../img/body.png') (center/cover) no-repeat
+            padding: 31px 20px 35px 23px
+        &__list
+            height: 320px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            &_item
+                display: flex
+                position: relative
+                .title
+                    position: absolute
+                    margin-left: 37px
+                    cursor: pointer
+                    
+        &_img
+            width: 100%
+        &_img
+            margin-top: 24px
+        &_footer
+            margin-top: 31px
+            display: block
+            background-color: $green
+            padding: 10px 0 8px 11px
+            position: relative
+
+            &::before
+                content: ''
+                box-shadow: 0 5px #fff,0 10px #fff
+                position: absolute
+                width: 12px
+                height: 2px
+                background: #fff
+                top: 11px
+                right: 10px
+    &-bottom
+        margin-top: 40px
+        padding-bottom: 20px
+        &_item
+            padding: 16px 0 12px 30px 
+            h5
+                // margin-top: 14px
+                font-size: 14px
+                font-weight: 300
+                text-align: left
+                // line-height: 2.86
+                color: #8c8c8c
+            p
+                margin-top: 9px
+                line-height: 1
+                margin-bottom: 0
+        
+            &:nth-child(odd)
+                background-color: $grey
+                
+
+.promo
+    
+    background: url('../img/promo.jpg') (center/cover) no-repeat  
+    padding: 79px 0 62px 41px       
+    height: 300px    
+    p
+        margin-top: 34px
+
+.atlas
+    margin-top: 40px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(2, 437px)
+        grid-template-rows: 140px 140px
+        column-gap: 43px
+        grid-row-gap: 40px
+        margin-top: 33px
+        &_item
+            display: flex   
+            p
+                padding-left: 31px
+                padding-top: 40px
+                // width: 267px  
+                width: 300px
+            &:first-child
+                .atlas__wrapper_img
+                    background-color: $green  
+            &:last-child
+                .atlas__wrapper_img
+                    background-color: $green              
+                      
+        &_img
+            background-color: $grey       
+            width: 140px
+            position: relative   
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+
+.manual
+    margin-top: 40px
+    &_title
+
+    &__wrapper
+        display: grid
+        grid-template-rows: repeat(2, 270px)
+        grid-template-columns: repeat(2, 480px)
+        grid-row-gap: 30px
+        &_item
+            &:first-child, &:last-child
+                // display: grid
+                // grid-template-rows: 120px 40px 40px
+                // grid-template-columns: 110px 289px
+                h2
+                    margin-top: 40px
+                .manual__wrapper_item-list
+                    margin-top: 62px
+                    display: grid
+                    grid-template-columns: 113px 291px
+                    grid-template-rows: 40px 40px
+                    column-gap: 17px
+                    grid-row-gap: 25px
+                    .manual_title
+                        font-size: 120px
+                        font-weight: 900
+                        line-height: 1
+                        letter-spacing: -4.8px
+                        text-align: left
+                        color: rgba(0, 0, 0, 0.1)
+                        grid-row-start: 1
+                        // grid-column-start: 1
+                        grid-row-end: 3
+                        // grid-column-end: 3
+                    .title_17b
+                        margin-top: 20px
+            &:last-child
+                .manual__wrapper_item-list
+                    margin-top: 79px
+                    margin-left: 44px
+                    grid-template-columns: 128px 291px
+            &:nth-child(3)
+                background: url('../img/scrin_left.jpg') (center/100%) no-repeat
+                span
+                    font-size: 14px
+                    font-weight: 900
+                    line-height: 2.14
+                    text-align: center
+                    color: #ffffff
+                    position: relative
+                    margin: 0 auto
+                    z-index: 1
+                    top: 58px
+                    left: 429px
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 30px
+                        height: 30px
+                        box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+                        background-color: #e53d3d
+                        border-radius: 15px
+                        top: -7px
+                        right: -8px
+                        z-index: -1
+            &:nth-child(2)
+                background: url('../img/scrin_right.jpg') (center/100%) no-repeat
+                span
+                    font-size: 14px
+                    font-weight: 900
+                    line-height: 2.14
+                    text-align: center
+                    color: #ffffff
+                    position: relative
+                    margin: 0 auto
+                    z-index: 1
+                    top: 30px
+                    left: 58px
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 30px
+                        height: 30px
+                        box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+                        background-color: #e53d3d
+                        border-radius: 15px
+                        top: -7px
+                        right: -7px
+                        z-index: -1
+
+.footer
+    margin-top: 36px
+    background-color: $green
+    padding: 0 56px 0 40px
+    width: 100vw
+    height: 100px
+    display: flex
+    text-align: justify
+    align-items: center
+    justify-content: space-between
+    &_item
+        a
+            text-decoration: none
+            position: relative
+            &::after                
+                position: absolute
+                content: url('../icons/up.png')
+                width: 9px
+                height: 12px
+                top: 2px
+                right: -16px
+                
+
+.personal 
+    text-align: center
+    padding: 10px
+    .form 
+        display: inline-block
+        padding: 25px
+        border: 1px solid #ccc
+        border-radius: 5px
+        width: 500px
+        background-color: white
+        label
+            display: flex
+            margin-left: 5%
+        input 
+            outline: none
+            display: block
+            width: 100%
+            border-radius: 2px
+            border: 1px solid #ccc
+            padding: 10px
+            box-sizing: border-box
+            &:valid:not(:placeholder-shown) 
+                border-color: green
+            &:invalid:not(:placeholder-shown) 
+                border-color: red
+            &:invalid:not(:placeholder-shown) + .form__error 
+                display: block
+        .password-checkbox
+            width: 13px
+            margin: 4px
+        button 
+            width: 100
+            padding: 10px
+            border-radius: 2px
+            border: 0
+            background-color: $green
+            color: #fff
+        // .form__field 
+        //     margin-bottom: 10px
+    .form__error 
+        color: red
+        text-align: left
+        font-size: 12px
+        display: block
+        margin-top: 3px
+        display: none
+
+.popup-fade
+    display: none
+    &:before 
+    content: ''
+    background: #000
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: 0.7
+    z-index: 9999
+.popup 
+	position: fixed
+	top: 20%
+	left: 50%
+	padding: 20px
+	width: 360px
+	margin-left: -200px	
+	background: #fff
+	border: 1px solid orange
+	border-radius: 4px
+	z-index: 99999
+	opacity: 1
+
+.popup-close 
+	position: absolute
+	top: 10px
+	right: 10px
+               

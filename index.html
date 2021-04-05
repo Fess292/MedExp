@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Атлас пациента</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="left__wrapper title title_14">
+            <a href="#">Главная</a>
+            <a href="#"></a><a href="">Обследование и анализы</a>
+            <a href="#">Запись онлайн</a>
+        </div>
+        <div class="right__wrapper title title_14">
+            <!-- <a href="#">Личные данные</a> -->
+            <a class="popup-open" href="#">Личные данные</a>
+            <a href="#">Выход</a>
+        </div>
+    </nav>
+
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <h3 class="title title_14">Тестов Иван Иванович</h3>
+    </header>
+
+    
+    <div class="popup-fade">
+        <div class="personal">
+            <a class="popup-close" href="#">Закрыть</a>
+            <div class="modal" id="consultation">
+                <!-- <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Просто заполните форму заявки</div>
+                <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div> -->
+                <form action="#" class="form" id="myForm" >
+                    <input type="text" name="name" placeholder="Имя"/>
+                    <input type="text" name="email" placeholder="E-Mail" />
+                    <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+                    <input type="text" name="phone" placeholder="Телефон" />
+                    <span class="form__error">Это поле должно содержать телефон в формате +7 (123) 456-78-90</span>
+                    <input type="password" name="pass" id="password-input" placeholder="Пароль" />
+                    <!-- <input type="checkbox" class="password-checkbox" > Показать пароль</label> -->
+                    <input type="password_confirmation" name="pass2" placeholder="Повторите пароль" id="password-input2"/>
+                    <label><input type="checkbox" class="password-checkbox"> Показать пароль</label>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <main>
+        <aside class="sidepanel">
+            <div class="sidepanel-top">
+                <h3 class="title title_17w">Фильтры иследований</h3>
+                <div class="sidepanel-top__wrapper">
+                    <div class="sidepanel-top__list">
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/mrt.png" alt="МРТ">
+                            </div>
+                            <div class="title title_14">МРТ</div>
+                        </div>
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/kt.png" alt="KТ">
+                            </div>
+                            <div class="title title_14">КТ</div>
+                        </div>
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/rentgen.png" alt="Рентген">
+                            </div>
+                            <div class="title title_14">Рентген</div>
+                        </div>
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/uzi.png" alt="УЗИ">
+                            </div>
+                            <div class="title title_14">УЗИ</div>
+                        </div>
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/fd.png" alt="KТ">
+                            </div>
+                            <div class="title title_14">ФД</div>
+                        </div>
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/kons.png" alt="Конс">
+                            </div>
+                            <div class="title title_14">Конс</div>
+                        </div>
+                        <div class="sidepanel-top__list_item">
+                            <div class="sidepanel-top__list_img">
+                                <img src="icons/analizi.png" alt="KТ">
+                            </div>
+                            <div class="title title_14">Анализы</div>
+                        </div>
+                    </div>
+                    <img src="img/bottle.png" alt="" class="sidepanel-top_img">
+                    <div class="sidepanel-top_footer title title_14w">Показать все исследования</div>
+                    
+                </div>
+                
+            </div>
+            <div class="sidepanel-bottom">
+                <h3 class="title title_17w">Журнал исследований</h3>
+                <div class="sidepanel-bottom_list">
+                    <div class="sidepanel-bottom_item">
+                        <h5>07.12.2016&nbsp&nbspl&nbsp&nbsp13:06 </h5>
+                        <p class="title title_14">
+                            МРТ Стопа</p>
+                    </div>
+                    <div class="sidepanel-bottom_item">
+                        <h5>
+                            26.09.2017 17:06</h5>
+                        <p class="title title_14"> Электронейромиография (ЭНМГ).</p>
+                    </div>
+                    <div class="sidepanel-bottom_item">
+                        <h5>
+                            07.12.2016 13:06</h5>
+                        <p class="title title_14"> 
+                            МРТ Шейный отдел позвоночни...</p>
+                    </div>
+                    <div class="sidepanel-bottom_item">
+                        <h5>
+                            26.09.2017 17:06 ФД .</h5>
+                        <p class="title title_14">Электронейромиография...</p>
+                    </div>
+                    <div class="sidepanel-bottom_item">
+                        <h5>
+                            07.12.2016 13:06 </h5>
+                        <p class="title title_14">
+                            МРТ Стопа</p>
+                    </div>
+                    <div class="sidepanel-bottom_item">
+                        <h5>
+                            26.09.2017 17:06 ФД </h5>
+                        <p class="title title_14">Электронейромиография</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </aside>
+        <section class="wrapper">
+            <section class="promo">
+                <h1 class="title">Добро пожаловать <br> 
+                    в атлас пациента</h1>
+                <p class="title title_20">Ознакомьтесь с краткой инструкцией<br>  
+                    и  возможностями сервиса «Атлас Пациент».</p>
+            </section>
+            <section class="atlas">
+                <h2 class="title title_30">Возможноти атлас пациента</h2>
+                <div class="atlas__wrapper">
+                    <div class="atlas__wrapper_item">
+                        <div class="atlas__wrapper_img">
+                            <img src="icons/icon1.png" alt="">
+                        </div>
+                        <p class="title title_17">В атласе пациента можно посмотреть все заключения по всем исследованиям</p>
+                    </div>
+                    <div class="atlas__wrapper_item">
+                        <div class="atlas__wrapper_img">
+                            <img src="icons/icon2.png" alt="">
+                        </div>
+                        <p class="title title_17">Из атласа пациента можно распечатать любое заключение </p>
+                    </div>
+                    <div class="atlas__wrapper_item">
+                        <div class="atlas__wrapper_img">
+                            <img src="icons/icon3.png" alt="">
+                        </div>
+                        <p class="title title_17">Наглядное представление динамики измерений по каждому показателю</p>
+                    </div>
+                    <div class="atlas__wrapper_item">
+                        <div class="atlas__wrapper_img">
+                            <img src="icons/icon4.png" alt="">
+                        </div>
+                        <p class="title title_17">Атлас пациента позволяет посмотреть результаты исследований удаленно</p>
+                    </div>
+                </div>
+            </section>
+            <section class="manual">
+                <div class="manual__wrapper">
+                    <div class="manual__wrapper_item">
+                        <h2 class="title title_30">Инструкция</h2>
+                        <div class="manual__wrapper_item-list">
+                            <div class="manual_title">01</div>
+                            <h3 class="title 
+                            title_17b">Навигация по исследованиям</h3>
+                            <p class="title title_17">Для ознакомления с исследованием выберите один из разделов в меню</p>
+                        </div>
+                    </div>
+                    <div class="manual__wrapper_item">
+                        <span>01</span>
+                    </div>
+                    <div class="manual__wrapper_item">
+                        <span>02</span>
+                    </div>
+                    <div class="manual__wrapper_item">
+                        <div class="manual__wrapper_item-list">
+                            <div class="manual_title">02</div>
+                            <h3 class="title 
+                            title_17b">Динамика измерений</h3>
+                            <p class="title title_17">Для просмотра динамики иследований нажмите на кнопку</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        
+            <div class="footer_item title title_14w">© 2018 Atlas Patient</div>
+            <div class="footer_item">
+                <a class="title title_14w" href="#" >На верх</a></div>
+        
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
