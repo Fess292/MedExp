@@ -4,8 +4,7 @@
             font-size: 13px
     main
         grid-template-columns: minmax(240px, 280px) minmax(650px, 860px)
-        .wrapper
-            padding-right: 40px
+
     .atlas
         &__wrapper
             grid-template-columns: minmax(305px, 410px) minmax(305px, 410px)
@@ -30,16 +29,14 @@
                 &:last-child
                     .manual__wrapper_item-list
                         margin-left: 20px
-// @media (max-width: 1200px)
 
 @media (max-width: 996px)
     main
         grid-template-columns: minmax(200px, 240px) minmax(400px, 650px)
         column-gap: 20px
         padding-left: 20px
+        padding-right: 20px
         margin-top: 20px
-        .wrapper
-            padding-right: 20px
         .sidepanel
             .title_17w 
                 font-size: 16px
@@ -54,7 +51,6 @@
         &__wrapper
             grid-template-columns: minmax(140px, 315px) minmax(140px, 315px)
             column-gap: 20px
-            // grid-template-rows: 125px 125px
             grid-row-gap: 20px
             &_item
                 p
@@ -82,8 +78,6 @@
                         margin-bottom: 10px   
                     .manual__wrapper_item-list
                         margin-top: 0
-                // &:nth-child(3)
-                //     height: 136px
                 .title_17 
                     font-size: 14px
 @media (max-width: 767px)
@@ -92,8 +86,6 @@
         padding-right: 23px
         .title_14
             font-size: 13px
-
-        // padding-right: 10px
         .left__wrapper
             width: 60%
         .right__wrapper
@@ -102,44 +94,35 @@
                 &:first-child, &:last-child
                     &::before
                         left: -18px
-            // padding-left: 10px
         
     main
         display: grid
         grid-template-columns: 1fr
         grid-template-rows: 554px 300px 
         padding-left: 10px
+        padding-right: 10px
         grid-row-gap: 10px
-        .wrapper
-            // display: grid
-            padding-right: 10px
-            // grid-template-rows: 1fr 1fr 
-            // grid-auto-rows: auto
-            // .promo
-            //     grid-row: 1 / 2
-            // .atlas
-            //     grid-row: 2 / 3
         .sidepanel
             grid-row: 1 / 2
             display: grid
             grid-template-columns: 1fr 1fr
             column-gap: 10px
-            padding-right: 10px
             &-bottom
                 margin-top: 0
         .wrapper
             grid-row: 2 / 4
-            // padding-right: 10px
             .atlas
                 margin-top: 10px
+                
                 h2
                     text-align: center
                 &__wrapper
                     margin-top: 10px
-        //         display: block
+                    justify-content: center
+            .manual__wrapper
+                justify-content: center
     .footer
         margin-top: 20px
-
 
 @media (max-width: 576px)
     nav
@@ -148,13 +131,11 @@
         .left__wrapper
             width: 100%
             padding: 0
-            .title_14
-                font-size: 12px
+            font-size: 12px
         .right__wrapper
             margin: 0 auto
             margin-top: 10px
-            width: 60%
-            
+            width: 60%   
     header
         padding-right: 24px
         padding-left: 10px
@@ -162,7 +143,6 @@
             width: 47%
         .title_14
             font-size: 13px
-            // text-align: right
             margin-bottom: 0
     .personal
         .form
@@ -201,7 +181,6 @@
                 p
                     padding: 10px 0 0 10px
                     margin-bottom: 0
-                    // font-size: 12px
         .manual
             margin-top: 10px
             h2
@@ -217,7 +196,6 @@
                     text-align: center
             &__wrapper
                 display: block
-                // position: relative
                 &_item
                     &:nth-child(2), &:nth-child(3)
                         height: 209px
@@ -233,8 +211,5 @@
                         .manual__wrapper_item-list
                             .title_17b
                                 margin-top: 0
-                    // &:nth-child(3)
-                    //     position: absolute
-                    //     height: 317px
-                    //     width: 100%
-                    //     top: 20px
+    .footer
+        padding: 0 30px       
