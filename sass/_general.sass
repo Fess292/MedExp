@@ -1,5 +1,5 @@
 nav
-    width: 100vw
+    width: 100%
     display: flex
     justify-content: space-between
     padding: 15px 39px 13px 41px
@@ -41,7 +41,7 @@ nav
 header
     display: flex
     justify-content: space-between
-    width: 100vw
+    width: 100%
     padding: 26px 40px
     box-shadow: 2.5px 4.3px 20px 0 rgba(0, 0, 0, 0.1)
     .title_14
@@ -83,8 +83,8 @@ main
                     cursor: pointer
                     
         &_img
-            width: 100%
-        &_img
+            display: flex
+            justify-content: space-between
             margin-top: 24px
         &_footer
             margin-top: 31px
@@ -252,7 +252,7 @@ main
     margin-top: 36px
     background-color: $green
     padding: 0 56px 0 40px
-    width: 100vw
+    width: 100%
     height: 100px
     display: flex
     text-align: justify
@@ -272,7 +272,10 @@ main
                 
 .personal 
     text-align: center
-    padding: 10px
+    // padding: 10px
+    display: flex
+    width: 100%
+    justify-content: center
     .form 
         display: inline-block
         padding: 25px
@@ -317,7 +320,7 @@ main
 
 .popup-fade
     display: none
-    &:before 
+.popup-fade:before 
     content: ''
     background: #000
     position: fixed
@@ -327,26 +330,26 @@ main
     height: 100%
     opacity: 0.7
     z-index: 9999
-    .popup-close 
-        // position: absolute
-        // top: 10px
-        // right: 10px
-        display: block
-        width: 1em
-        height: 1em
-        background-color: #fff
-        margin: 0 auto
-        margin-bottom: 10px
-        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)
+// .popup-close 
+//     position: absolute
+//     top: 10px
+//     // right: 10px
+//     display: block
+//     width: 1em
+//     height: 1em
+//     background-color: #fff
+//     margin: 0 auto
+//     margin-bottom: 10px
+//     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)
 .popup 
 	position: fixed
-	top: 20%
-	left: 50%
-	padding: 20px
-	width: 360px
-	margin-left: -200px	
-	background: #fff
-	border: 1px solid orange
+	// top: 20%
+	// left: 50%
+	// padding: 20px
+	// width: 360px
+	// margin-left: -200px	
+	// background: #fff
+	// border: 1px solid orange
 	border-radius: 4px
 	z-index: 99999
 	opacity: 1

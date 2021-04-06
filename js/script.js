@@ -63,6 +63,12 @@ $(document).ready(function(){
 		$(this).parents('.popup-fade').fadeOut();
 		return false;
 	});        
+
+  $('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+  }); 
  
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
